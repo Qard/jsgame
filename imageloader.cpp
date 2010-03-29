@@ -29,9 +29,7 @@
 
 using namespace std;
 
-Image::Image(char* ps, int w, int h) : pixels(ps), width(w), height(h) {
-
-}
+Image::Image(char* ps, int w, int h) : pixels(ps), width(w), height(h) { }
 
 Image::~Image() {
 	delete[] pixels;
@@ -74,8 +72,7 @@ namespace {
 			mutable bool isReleased;
 		public:
 			explicit auto_array(T* array_ = NULL) :
-				array(array_), isReleased(false) {
-			}
+				array(array_), isReleased(false) {}
 
 			auto_array(const auto_array<T> &aarray) {
 				array = aarray.array;
@@ -101,6 +98,7 @@ namespace {
 				if (!isReleased && array != NULL) {
 					delete[] array;
 				}
+				
 				array = aarray.array;
 				isReleased = aarray.isReleased;
 				aarray.isReleased = true;
@@ -119,6 +117,7 @@ namespace {
 				if (!isReleased && array != NULL) {
 					delete[] array;
 				}
+				
 				array = array_;
 			}
 
@@ -130,8 +129,6 @@ namespace {
 				return array[i];
 			}
 	};
-
-
 }
 
 Image* loadBMP(const char* filename) {
@@ -140,7 +137,7 @@ Image* loadBMP(const char* filename) {
 	assert(!input.fail() || !"Could not find file");
 	char buffer[2];
 	input.read(buffer, 2);
-	assert(buffer[0] == 'B' && buffer[1] == 'M' || !"Not a bitmap file");
+	assert((buffer[0] == 'B' && buffer[1] == 'M') || !"Not a bitmap file");
 	input.ignore(8);
 	int dataOffset = readInt(input);
 
@@ -148,6 +145,7 @@ Image* loadBMP(const char* filename) {
 	int headerSize = readInt(input);
 	int width;
 	int height;
+	
 	switch(headerSize) {
 		case 40:
 			//V3
@@ -189,6 +187,7 @@ Image* loadBMP(const char* filename) {
 
 	//Get the data into the right format
 	auto_array<char> pixels2(new char[width * height * 3]);
+	
 	for(int y = 0; y < height; y++) {
 		for(int x = 0; x < width; x++) {
 			for(int c = 0; c < 3; c++) {
@@ -206,10 +205,11 @@ Image* loadPNG(const char* filename) {
 	ifstream input;
 	input.open(filename, ifstream::binary);
 	assert(!input.fail() || !"Could not find file");
+	
 	//check if png file
 	char buffer[8];
 	input.read(buffer, 8);
-	assert(buffer[1] == 'P' && buffer[2] == 'N' && buffer[3] == 'G'
+	assert((buffer[1] == 'P' && buffer[2] == 'N' && buffer[3] == 'G')
 			|| !"Not a png file");
 
 	char* data;
@@ -217,10 +217,12 @@ Image* loadPNG(const char* filename) {
 
 	//read header
 	char type_buffer[4];
+	
 	//read header length
 	int len = readInt(input);
 	printf("%d - len\n", len);
 	input.read(type_buffer, 4);
+	
 	if(type_buffer[0] == 'I' && type_buffer[1] == 'H'
 			&& type_buffer[2] == 'D' && type_buffer[3] == 'R') {
 		//grab width and height
@@ -228,9 +230,11 @@ Image* loadPNG(const char* filename) {
 		height = readInt(input);
 
 		printf("\n\nheader - width: %d, height: %d\n\n", width, height);
+		
 		//read other header options like color type, bit depths
 		char buff[5];
 		input.read(buff, 5);
+		
 		//check for RGB pixel data
 		if((buff[0] == 8 || buff[0] == 16)
 				&& buff[1] == 2) {
@@ -242,15 +246,22 @@ Image* loadPNG(const char* filename) {
 			//read all data chunks
 			len = readInt(input);
 			input.read(type_buffer, 4);
-			while(!(type_buffer[0] == 'I' && type_buffer[1] == 'E'
-					&& type_buffer[2] == 'N' && type_buffer[3] == 'D')) {
-				printf("%c-%c-%c-%c ", type_buffer[0], type_buffer[1], type_buffer[2], type_buffer[3]);
-				if(type_buffer[0] == 'I' && type_buffer[1] == 'D'
-						&& type_buffer[2] == 'A' && type_buffer[3] == 'T') {
+			while(!(type_buffer[0] == 'I'
+				&& type_buffer[1] == 'E'
+				&& type_buffer[2] == 'N'
+				&& type_buffer[3] == 'D')) {
+				printf("%c-%c-%c-%c ", type_buffer[0], type_buffer[1],
+					type_buffer[2], type_buffer[3]);
+				
+				if(type_buffer[0] == 'I'
+					&& type_buffer[1] == 'D'
+					&& type_buffer[2] == 'A'
+					&& type_buffer[3] == 'T') {
 					printf("data\n\n");
 //					char* d = new char[len];
 //					input.read(d, len);
-//					for(int i=0; i < len; i++) {
+//					for(int i=0; i < len; i++)
+//					{
 //						data[len_accum + (len - i - 1)] = d[i];
 //					}
 //					delete[] d;
@@ -276,10 +287,3 @@ Image* loadPNG(const char* filename) {
 	input.close();
 	return new Image(data, width, height);
 }
-
-
-
-
-
-
-

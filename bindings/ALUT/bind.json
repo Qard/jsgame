@@ -1,0 +1,241 @@
+[
+    {
+        "type": "c", 
+        "name": "ALUT_API", 
+        "value": "__declspec(dllexport)"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_APIENTRY", 
+        "value": "__cdecl"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ATTRIBUTE_DEPRECATED", 
+        "value": "__declspec(deprecated)"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_API_MAJOR_VERSION", 
+        "value": "1"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_API_MINOR_VERSION", 
+        "value": "1"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_NO_ERROR", 
+        "value": "0"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_OUT_OF_MEMORY", 
+        "value": "0x200"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_INVALID_ENUM", 
+        "value": "0x201"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_INVALID_VALUE", 
+        "value": "0x202"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_INVALID_OPERATION", 
+        "value": "0x203"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_NO_CURRENT_CONTEXT", 
+        "value": "0x204"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_AL_ERROR_ON_ENTRY", 
+        "value": "0x205"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_ALC_ERROR_ON_ENTRY", 
+        "value": "0x206"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_OPEN_DEVICE", 
+        "value": "0x207"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_CLOSE_DEVICE", 
+        "value": "0x208"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_CREATE_CONTEXT", 
+        "value": "0x209"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_MAKE_CONTEXT_CURRENT", 
+        "value": "0x20A"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_DESTROY_CONTEXT", 
+        "value": "0x20B"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_GEN_BUFFERS", 
+        "value": "0x20C"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_BUFFER_DATA", 
+        "value": "0x20D"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_IO_ERROR", 
+        "value": "0x20E"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_UNSUPPORTED_FILE_TYPE", 
+        "value": "0x20F"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_UNSUPPORTED_FILE_SUBTYPE", 
+        "value": "0x210"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_ERROR_CORRUPT_OR_TRUNCATED_DATA", 
+        "value": "0x211"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_WAVEFORM_SINE", 
+        "value": "0x100"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_WAVEFORM_SQUARE", 
+        "value": "0x101"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_WAVEFORM_SAWTOOTH", 
+        "value": "0x102"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_WAVEFORM_WHITENOISE", 
+        "value": "0x103"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_WAVEFORM_IMPULSE", 
+        "value": "0x104"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_LOADER_BUFFER", 
+        "value": "0x300"
+    }, 
+    {
+        "type": "c", 
+        "name": "ALUT_LOADER_MEMORY", 
+        "value": "0x301"
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alutInit", 
+        "parameters": [
+            "int*", 
+            "char**"
+        ]
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alutInitWithoutContext", 
+        "parameters": [
+            "int*", 
+            "char**"
+        ]
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alutExit", 
+        "parameters": []
+    }, 
+    {
+        "return_type": "ALenum", 
+        "type": "f", 
+        "name": "alutGetError", 
+        "parameters": []
+    }, 
+    {
+        "return_type": "ALuint", 
+        "type": "f", 
+        "name": "alutCreateBufferFromFile", 
+        "parameters": [
+            "const char*"
+        ]
+    }, 
+    {
+        "return_type": "ALuint", 
+        "type": "f", 
+        "name": "alutCreateBufferFromFileImage", 
+        "parameters": [
+            "const ALvoid*", 
+            "ALsizei"
+        ]
+    }, 
+    {
+        "return_type": "ALuint", 
+        "type": "f", 
+        "name": "alutCreateBufferHelloWorld", 
+        "parameters": []
+    }, 
+    {
+        "return_type": "ALuint", 
+        "type": "f", 
+        "name": "alutCreateBufferWaveform", 
+        "parameters": [
+            "ALenum", 
+            "ALfloat", 
+            "ALfloat", 
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "ALint", 
+        "type": "f", 
+        "name": "alutGetMajorVersion", 
+        "parameters": []
+    }, 
+    {
+        "return_type": "ALint", 
+        "type": "f", 
+        "name": "alutGetMinorVersion", 
+        "parameters": []
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alutSleep", 
+        "parameters": [
+            "ALfloat"
+        ]
+    }
+]

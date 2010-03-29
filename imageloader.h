@@ -22,7 +22,8 @@
 #define IMAGE_LOADER_H_
 
 //Represents an image
-class Image {
+class Image
+{
 	public:
 		Image(char* ps, int w, int h);
 		~Image();

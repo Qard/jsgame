@@ -2,10 +2,10 @@
 include Makefile.$(firstword $(subst _, ,$(shell uname -s)))
 
 CC = g++
-CFLAGS := $(CFLAGS) -m32 -Wall -Iv8/include 
-PROG = v8-gl 
+CFLAGS := $(CFLAGS) -m32 -Wall -Iexternal/v8/include
+PROG = jsgame
 
-SRCS = main.cpp imageloader.cpp utils.cpp v8-gl.cpp glbindings/glbind.cpp glesbindings/glesbind.cpp glubindings/glubind.cpp glutbindings/glutbind.cpp
+SRCS = main.cpp imageloader.cpp utils.cpp jsgame.cpp bindings/OpenGL/bind.cpp bindings/OpenGLES/bind.cpp bindings/GLU/bind.cpp bindings/GLUT/bind.cpp bindings/OpenAL/bind.cpp bindings/ALUT/bind.cpp
 
 all: $(PROG)
 

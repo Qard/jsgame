@@ -1,0 +1,23 @@
+commit 0d031fcbcf519b43a0db49c83c208b0b9c93a422
+Author: Cedric Vivier <cedricv@neonux.com>
+Date:   Sat Oct 10 13:07:09 2009 +0800
+
+    Fix compilation with GCC 4.4.x when environment variable GCC_VERSION="44"
+    Error was: dereferencing pointer '<anonymous>' does break strict-aliasing rules
+---
+ SConstruct |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/SConstruct b/SConstruct
+index 9208a76..8dbaa97 100755
+--- a/SConstruct
++++ b/SConstruct
+@@ -47,7 +47,7 @@ if ANDROID_TOP is None:
+ # on linux we need these compiler flags to avoid crashes in the v8 test suite
+ # and avoid dtoa.c strict aliasing issues
+ if os.environ.get('GCC_VERSION') == '44':
+-    GCC_EXTRA_CCFLAGS = ['-fno-tree-vrp']
++    GCC_EXTRA_CCFLAGS = ['-fno-tree-vrp', '-fno-strict-aliasing']
+     GCC_DTOA_EXTRA_CCFLAGS = ['-fno-strict-aliasing']
+ else:
+     GCC_EXTRA_CCFLAGS = []

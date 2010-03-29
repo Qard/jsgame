@@ -1,0 +1,43 @@
+10
+
+dir
+3123
+http://v8.googlecode.com/svn/trunk/test
+http://v8.googlecode.com/svn
+
+
+
+2009-10-23T12:33:42.800226Z
+3121
+sgjesse@chromium.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ce2b1a6d-e550-0410-aec6-3dcde31c8c00
+
+es5conform
+dir
+
+message
+dir
+
+cctest
+dir
+
+mozilla
+dir
+
+mjsunit
+dir
+

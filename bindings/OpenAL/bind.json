@@ -1,0 +1,1030 @@
+[
+    {
+        "type": "c", 
+        "name": "AL_API", 
+        "value": "__declspec(dllexport)"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_APIENTRY", 
+        "value": "__cdecl"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INVALID", 
+        "value": "(-1)"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_ILLEGAL_ENUM", 
+        "value": "AL_INVALID_ENUM"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_ILLEGAL_COMMAND", 
+        "value": "AL_INVALID_OPERATION"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_NONE", 
+        "value": "0"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_FALSE", 
+        "value": "0"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_TRUE", 
+        "value": "1"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_SOURCE_RELATIVE", 
+        "value": "0x202"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_CONE_INNER_ANGLE", 
+        "value": "0x1001"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_CONE_OUTER_ANGLE", 
+        "value": "0x1002"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_PITCH", 
+        "value": "0x1003"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_POSITION", 
+        "value": "0x1004"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_DIRECTION", 
+        "value": "0x1005"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_VELOCITY", 
+        "value": "0x1006"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_LOOPING", 
+        "value": "0x1007"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_BUFFER", 
+        "value": "0x1009"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_GAIN", 
+        "value": "0x100A"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_MIN_GAIN", 
+        "value": "0x100D"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_MAX_GAIN", 
+        "value": "0x100E"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_ORIENTATION", 
+        "value": "0x100F"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_SOURCE_STATE", 
+        "value": "0x1010"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INITIAL", 
+        "value": "0x1011"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_PLAYING", 
+        "value": "0x1012"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_PAUSED", 
+        "value": "0x1013"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_STOPPED", 
+        "value": "0x1014"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_BUFFERS_QUEUED", 
+        "value": "0x1015"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_BUFFERS_PROCESSED", 
+        "value": "0x1016"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_SEC_OFFSET", 
+        "value": "0x1024"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_SAMPLE_OFFSET", 
+        "value": "0x1025"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_BYTE_OFFSET", 
+        "value": "0x1026"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_SOURCE_TYPE", 
+        "value": "0x1027"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_STATIC", 
+        "value": "0x1028"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_STREAMING", 
+        "value": "0x1029"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_UNDETERMINED", 
+        "value": "0x1030"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_FORMAT_MONO8", 
+        "value": "0x1100"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_FORMAT_MONO16", 
+        "value": "0x1101"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_FORMAT_STEREO8", 
+        "value": "0x1102"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_FORMAT_STEREO16", 
+        "value": "0x1103"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_REFERENCE_DISTANCE", 
+        "value": "0x1020"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_ROLLOFF_FACTOR", 
+        "value": "0x1021"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_CONE_OUTER_GAIN", 
+        "value": "0x1022"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_MAX_DISTANCE", 
+        "value": "0x1023"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_FREQUENCY", 
+        "value": "0x2001"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_BITS", 
+        "value": "0x2002"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_CHANNELS", 
+        "value": "0x2003"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_SIZE", 
+        "value": "0x2004"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_UNUSED", 
+        "value": "0x2010"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_PENDING", 
+        "value": "0x2011"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_PROCESSED", 
+        "value": "0x2012"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_NO_ERROR", 
+        "value": "AL_FALSE"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INVALID_NAME", 
+        "value": "0xA001"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INVALID_ENUM", 
+        "value": "0xA002"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INVALID_VALUE", 
+        "value": "0xA003"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INVALID_OPERATION", 
+        "value": "0xA004"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_OUT_OF_MEMORY", 
+        "value": "0xA005"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_VENDOR", 
+        "value": "0xB001"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_VERSION", 
+        "value": "0xB002"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_RENDERER", 
+        "value": "0xB003"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_EXTENSIONS", 
+        "value": "0xB004"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_DOPPLER_FACTOR", 
+        "value": "0xC000"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_DOPPLER_VELOCITY", 
+        "value": "0xC001"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_SPEED_OF_SOUND", 
+        "value": "0xC003"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_DISTANCE_MODEL", 
+        "value": "0xD000"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INVERSE_DISTANCE", 
+        "value": "0xD001"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_INVERSE_DISTANCE_CLAMPED", 
+        "value": "0xD002"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_LINEAR_DISTANCE", 
+        "value": "0xD003"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_LINEAR_DISTANCE_CLAMPED", 
+        "value": "0xD004"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_EXPONENT_DISTANCE", 
+        "value": "0xD005"
+    }, 
+    {
+        "type": "c", 
+        "name": "AL_EXPONENT_DISTANCE_CLAMPED", 
+        "value": "0xD006"
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alEnable", 
+        "parameters": [
+            "ALenum"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alDisable", 
+        "parameters": [
+            "ALenum"
+        ]
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alIsEnabled", 
+        "parameters": [
+            "ALenum"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetBooleanv", 
+        "parameters": [
+            "ALenum", 
+            "ALboolean**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetIntegerv", 
+        "parameters": [
+            "ALenum", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetFloatv", 
+        "parameters": [
+            "ALenum", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetDoublev", 
+        "parameters": [
+            "ALenum", 
+            "ALdouble**"
+        ]
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alGetBoolean", 
+        "parameters": [
+            "ALenum"
+        ]
+    }, 
+    {
+        "return_type": "ALint", 
+        "type": "f", 
+        "name": "alGetInteger", 
+        "parameters": [
+            "ALenum"
+        ]
+    }, 
+    {
+        "return_type": "ALfloat", 
+        "type": "f", 
+        "name": "alGetFloat", 
+        "parameters": [
+            "ALenum"
+        ]
+    }, 
+    {
+        "return_type": "ALdouble", 
+        "type": "f", 
+        "name": "alGetDouble", 
+        "parameters": [
+            "ALenum"
+        ]
+    }, 
+    {
+        "return_type": "ALenum", 
+        "type": "f", 
+        "name": "alGetError", 
+        "parameters": []
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alIsExtensionPresent", 
+        "parameters": [
+            "const ALchar**"
+        ]
+    }, 
+    {
+        "return_type": "void*", 
+        "type": "f", 
+        "name": "alGetProcAddress", 
+        "parameters": [
+            "const ALchar**"
+        ]
+    }, 
+    {
+        "return_type": "ALenum", 
+        "type": "f", 
+        "name": "alGetEnumValue", 
+        "parameters": [
+            "const ALchar**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alListenerf", 
+        "parameters": [
+            "ALenum", 
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alListener3f", 
+        "parameters": [
+            "ALenum", 
+            "ALfloat", 
+            "ALfloat", 
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alListenerfv", 
+        "parameters": [
+            "ALenum", 
+            "const ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alListeneri", 
+        "parameters": [
+            "ALenum", 
+            "ALint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alListener3i", 
+        "parameters": [
+            "ALenum", 
+            "ALint", 
+            "ALint", 
+            "ALint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alListeneriv", 
+        "parameters": [
+            "ALenum", 
+            "const ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetListenerf", 
+        "parameters": [
+            "ALenum", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetListener3f", 
+        "parameters": [
+            "ALenum", 
+            "ALfloat*", 
+            "ALfloat*", 
+            "ALfloat*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetListenerfv", 
+        "parameters": [
+            "ALenum", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetListeneri", 
+        "parameters": [
+            "ALenum", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetListener3i", 
+        "parameters": [
+            "ALenum", 
+            "ALint*", 
+            "ALint*", 
+            "ALint*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetListeneriv", 
+        "parameters": [
+            "ALenum", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGenSources", 
+        "parameters": [
+            "ALsizei", 
+            "ALuint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alDeleteSources", 
+        "parameters": [
+            "ALsizei", 
+            "const ALuint**"
+        ]
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alIsSource", 
+        "parameters": [
+            "ALuint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourcef", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSource3f", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat", 
+            "ALfloat", 
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourcefv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "const ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourcei", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSource3i", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint", 
+            "ALint", 
+            "ALint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourceiv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "const ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetSourcef", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetSource3f", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat**", 
+            "ALfloat**", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetSourcefv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetSourcei", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetSource3i", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint**", 
+            "ALint**", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetSourceiv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourcePlayv", 
+        "parameters": [
+            "ALsizei", 
+            "const ALuint*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourceStopv", 
+        "parameters": [
+            "ALsizei", 
+            "const ALuint*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourceRewindv", 
+        "parameters": [
+            "ALsizei", 
+            "const ALuint*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourcePausev", 
+        "parameters": [
+            "ALsizei", 
+            "const ALuint*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourcePlay", 
+        "parameters": [
+            "ALuint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourceStop", 
+        "parameters": [
+            "ALuint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourceRewind", 
+        "parameters": [
+            "ALuint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourcePause", 
+        "parameters": [
+            "ALuint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourceQueueBuffers", 
+        "parameters": [
+            "ALuint", 
+            "ALsizei", 
+            "const ALuint*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSourceUnqueueBuffers", 
+        "parameters": [
+            "ALuint", 
+            "ALsizei", 
+            "ALuint*"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGenBuffers", 
+        "parameters": [
+            "ALsizei", 
+            "ALuint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alDeleteBuffers", 
+        "parameters": [
+            "ALsizei", 
+            "const ALuint**"
+        ]
+    }, 
+    {
+        "return_type": "ALboolean", 
+        "type": "f", 
+        "name": "alIsBuffer", 
+        "parameters": [
+            "ALuint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alBufferData", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "const ALvoid**", 
+            "ALsizei", 
+            "ALsizei"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alBufferf", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alBuffer3f", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat", 
+            "ALfloat", 
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alBufferfv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "const ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alBufferi", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alBuffer3i", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint", 
+            "ALint", 
+            "ALint"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alBufferiv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "const ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetBufferf", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetBuffer3f", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat**", 
+            "ALfloat**", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetBufferfv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALfloat**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetBufferi", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetBuffer3i", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint**", 
+            "ALint**", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alGetBufferiv", 
+        "parameters": [
+            "ALuint", 
+            "ALenum", 
+            "ALint**"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alDopplerFactor", 
+        "parameters": [
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alDopplerVelocity", 
+        "parameters": [
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alSpeedOfSound", 
+        "parameters": [
+            "ALfloat"
+        ]
+    }, 
+    {
+        "return_type": "void", 
+        "type": "f", 
+        "name": "alDistanceModel", 
+        "parameters": [
+            "ALenum"
+        ]
+    }
+]

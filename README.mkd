@@ -39,7 +39,7 @@ Since there are no releases yet, you can clone the repo from github
 Then [checkout](http://code.google.com/p/v8/source/checkout) V8 source
 
     $ cd v8-gl
-    $ svn co http://v8.googlecode.com/svn/trunk/ v8
+    $ svn co -r 3123 http://v8.googlecode.com/svn/trunk/ v8
 
 Build V8
 

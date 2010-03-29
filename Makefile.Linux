@@ -1,1 +1,1 @@
-LIBS =  v8/libv8.a -lpthread -lglut -lGLU -lGL
+LIBS =  external/v8/libv8.a -lpthread -lglut -lGLU -lGL -lopenal -lalut
