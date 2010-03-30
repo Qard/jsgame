@@ -30,7 +30,7 @@ Download
 
 Since there are no releases yet, you can clone the repo from github
  
-    $ git clone git://github.com/philogb/v8-gl.git
+    $ git clone git://github.com/qard/jsgame.git
 
 Build V8
 
@@ -45,7 +45,7 @@ Make the project
 You'll probably get some warnings (but no errors), so everything should be ok.
 Finally, run some example JS code
 
-    $ ./v8-gl examples/example2.js
+    $ ./jsgame examples/example2.js
 
 Example
 ---------
