@@ -1,6 +1,0 @@
-K 13
-svn:mergeinfo
-V 217
-/branches/bleeding_edge/test/mjsunit/regress/regress-334.js:1984-2079,2290-2536,2538-2590,2593-2623,2636,2642,2680-2738,2890-2948,2956-3023,3025-3081
-/branches/experimental/toiger/test/mjsunit/bugs/bug-334.js:665-1384
-END
