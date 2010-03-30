@@ -1,1 +1,3 @@
-LIBS =  external/v8/libv8.a -lpthread -lglut -lGLU -lGL -lopenal -lalut
+# ALUT isn't ready yet.
+#LIBS =  external/v8/libv8.a -lpthread -lglut -lGLU -lGL -lopenal -lalut
+LIBS =  external/v8/libv8.a -lpthread -lglut -lGLU -lGL -lopenal

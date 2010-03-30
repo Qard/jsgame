@@ -151,7 +151,8 @@ bool JSGame::initialize(int* pargc, char** argv, string scriptname) {
 	global->Set(String::New("Glu"), createGlu());
 	global->Set(String::New("Glut"), GlutFactory::createGlut(pargc, argv));
 	global->Set(String::New("Al"), AlFactory::createAl(pargc, argv));
-	global->Set(String::New("Alut"), AlutFactory::createAlut(pargc, argv));
+	// ALUT isn't ready yet.
+	//global->Set(String::New("Alut"), AlutFactory::createAlut(pargc, argv));
 	global->Set(String::New("log"), FunctionTemplate::New(log));
 	global->Set(String::New("load"), FunctionTemplate::New(load));
 

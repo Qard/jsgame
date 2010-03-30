@@ -1,33 +1,29 @@
-V8-GL
+JSGame
 =========
 
-A JavaScript Toolkit for creating Desktop Hardware Accelerated Graphics with JS.
+A game development toolkit similar to pygame, except running on Javascript instead. Derived from [philogb](http://github.com/philogb)'s [V8-GL](http://github.com/philogb/v8-gl).
 
-![A V8-GL example code](http://blog.thejit.org/wp-content/v8gl2.png)
+![A JSGame example code](http://blog.thejit.org/wp-content/v8gl2.png)
 
 Description
 ---------
 
-V8-GL intends to provide bindings for creating 2D-3D hardware accelerated graphics on the Desktop with JavaScript.
+JSGame intends to provide bindings for creating 2D-3D hardware accelerated graphics on the Desktop with JavaScript.
 
-Although OpenGL bindings are included in this library, this project main goal is to provide a more rich and easy-to-use toolkit 
-for making 2D-3D graphics.
-
-I set a few goals for this project, the first of those is to provide complete OpenGL bindings for V8.
-Other goals will be explained at [my blog](http://blog.thejit.org) in due time.
-
+Although OpenGL bindings are included in this library, this projects main goal is to provide a more rich and easy-to-use toolkit for making 2D-3D applications. OpenAL support is currently in development and networking is next on the list after that.
 
 Status
 ---------
 
-No releases yet. OpenGL 2.1 bindings are 75% complete. The repo already has some functional examples. See the *example* readme section for a complete working example.
+No releases yet. OpenGL 2.1 bindings are 75% complete. The repo already has some functional examples. See the *example* readme section for a complete working example. OpenAL is implemented, but not yet tested and ALUT is incomplete.
 
 Requirements
 ---------
 
-- I use Mac OS X, but you can try to build your examples with Linux or Windows if you want. I guess that the only differences between Mac and Linux might be a couple of lines in the Makefile.
+- Known to work on Linux and Mac OSX, should also work on Windows, but is untested.
 - OpenGL 2.1+
-- [V8](http://code.google.com/p/v8/) and its requirements
+- OpenAL 1.0+
+- [V8](http://code.google.com/p/v8/) and its requirements (included in external)
 
 Download
 ---------
@@ -35,11 +31,6 @@ Download
 Since there are no releases yet, you can clone the repo from github
  
     $ git clone git://github.com/philogb/v8-gl.git
-
-Then [checkout](http://code.google.com/p/v8/source/checkout) V8 source
-
-    $ cd v8-gl
-    $ svn co -r 3123 http://v8.googlecode.com/svn/trunk/ v8
 
 Build V8
 
@@ -55,8 +46,6 @@ You'll probably get some warnings (but no errors), so everything should be ok.
 Finally, run some example JS code
 
     $ ./v8-gl examples/example2.js
-    
-
 
 Example
 ---------
@@ -125,8 +114,6 @@ Here's an example of a rotating Icosahedron with some lighting and colors.
         //Start the main loop.
         Glut.MainLoop();
     })();
-    
-
 
 License
 ---------

@@ -1,1 +1,3 @@
-LIBS =  v8/libv8.a -lpthread -framework OpenGL -framework GLUT
+# ALUT isn't ready yet.
+#LIBS =  v8/libv8.a -lpthread -framework OpenGL -framework GLUT -framework OpenAL -framework ALUT
+LIBS =  v8/libv8.a -lpthread -framework OpenGL -framework GLUT -framework OpenAL
