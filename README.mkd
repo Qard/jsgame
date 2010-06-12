@@ -28,24 +28,46 @@ Requirements
 Download
 ---------
 
-Since there are no releases yet, you can clone the repo from github
+Before we get started, there is a few things that you need to make sure are installed. In Ubuntu, run this command;
+
+    $ sudo apt-get install scons libglu-dev libglut3-dev libalut-dev
+
+Since there are no binary releases yet, you can clone the repo from github
  
     $ git clone git://github.com/qard/jsgame.git
+    $ git submodule init
+    $ git submodule update
 
-Build V8
+Compile V8--but before that, you need to explicitly identify GCC because of a bug in Ubuntu.
 
-    $ cd v8
+    $ cd externals/v8
+    $ export GCC_VERSION=44
     $ scons mode=release
 
 Make the project
 
-    $ cd ..
+    $ cd ../..
     $ make
     
-You'll probably get some warnings (but no errors), so everything should be ok.
+You'll probably get some warnings (but hopefully no errors), so everything should be ok.
 Finally, run some example JS code
 
     $ ./jsgame examples/example2.js
+
+NOTE FOR 64-BIT:
+You may get some linker errors that look something like this;
+
+    $ /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libstdc++.so when searching for -lstdc++
+    $ /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libstdc++.a when searching for -lstdc++
+    $ /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libstdc++.so when searching for -lstdc++
+    $ /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libstdc++.a when searching for -lstdc++
+    $ /usr/bin/ld: cannot find -lstdc++
+    $ collect2: ld returned 1 exit status
+    $ make: *** [jsgame] Error 1
+
+If you do, just do this and then run make again;
+
+    $ ln -s /usr/lib32/libstdc++.so.6 /usr/lib32/libstdc++.so
 
 Example
 ---------
