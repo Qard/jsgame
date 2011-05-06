@@ -40,7 +40,7 @@ Since there are no binary releases yet, you can clone the repo from github
 
 Compile V8--but before that, you need to explicitly identify GCC because of a bug in Ubuntu.
 
-    $ cd externals/v8
+    $ cd external/v8
     $ export GCC_VERSION=44
     $ scons mode=release
 
