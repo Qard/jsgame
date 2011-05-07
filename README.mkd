@@ -3,7 +3,7 @@ JSGame
 
 A game development toolkit similar to pygame, except running on Javascript instead. Derived from [philogb](http://github.com/philogb)'s [V8-GL](http://github.com/philogb/v8-gl).
 
-![A JSGame example code](http://blog.thejit.org/wp-content/v8gl2.png)
+![A JSGame example code](http://jsgame.mycdn.in/images/screen.png )
 
 Description
 ---------
