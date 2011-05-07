@@ -69,7 +69,8 @@ If you do, just do this and then run make again;
 
     $ ln -s /usr/lib32/libstdc++.so.6 /usr/lib32/libstdc++.so
 
-Also the g++-multilib is needed 
+Also the g++-multilib is needed
+ 
     $ apt-get install g++-multilib
 
 Example
