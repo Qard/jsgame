@@ -34,7 +34,8 @@ Before we get started, there is a few things that you need to make sure are inst
 
 Since there are no binary releases yet, you can clone the repo from github
  
-    $ git clone git://github.com/qard/jsgame.git
+    $ git clone git://github.com/Qard/jsgame.git
+    $ cd jsgame
     $ git submodule init
     $ git submodule update
 
